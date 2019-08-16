@@ -19,51 +19,103 @@
 %% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 %% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 %% SOFTWARE.
-    % The font could be set to Windows-specific Calibri by using the 'calibri' option
-    \documentclass[]{mcdowellcv}
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[]{mcdowellcv}
 
-    % For mathematical symbols
-    \usepackage{amsmath}
+% For mathematical symbols
+\usepackage{amsmath}
 
-      % Set applicant's personal data for header
-      \name{Luan Santos}
-      \address{San Francisco, CA \linebreak (415) 528--1191}
-      \contacts{cfcluan@gmail.com \linebreak github.com/luan}
+% Set applicant's personal data for header
+\name{Luan Santos}
+\address{San Francisco, CA \linebreak (415) 528--1191}
+\contacts{cfcluan@gmail.com \linebreak github.com/luan}
 
-    \begin{document}
+\begin{document}
 % Print the header
 \makeheader{}
 
-\begin{cvsection}{Education}
-	\begin{cvsubsection}{Curitiba, Brazil}{Uni. Federal do Paraná}{Jan 2008 | Dec 2011}
-		\begin{itemize}
-			\item BS in Computer Science.
-		\end{itemize}
-	\end{cvsubsection}
-\end{cvsection}
 \begin{cvsection}{Employment}
-	\begin{cvsubsection}{Dev / Researcher}{C3SL | UFPR}{July 2008 | Jan 2011}
-		Curitiba, Brazil
-		\begin{itemize}%
-			\item Presented research work on intelligent tutoring systems at the EVINCI local conference.
-		\end{itemize}
-	\end{cvsubsection}
-	\begin{cvsubsection}{Founder / Developer}{Portal Tibia}{Jan 2004 | Dec 2009}
-		Curitiba, Brazil
-		\begin{itemize}%
-			\item Developed early AJAX/XHR technologies. Around the time GMail made these technologies popular.
-			\item Managed a community of thousands of daily active users.
-		\end{itemize}
-	\end{cvsubsection}
+    \begin{cvsubsection}{Principal Software Engineer}{Pivotal R\&D \normalfont{(San Francisco, CA)}}{May 2017 | \emph{Present}}
+	\begin{itemize}%
+	    \item Designed and led development of in-house DNS based \textbf{service discovery system}. Guided organization through implementing that system over the previously used Consul.
+	    \item Provided support to large customers through beign on-call for the platform's infrastrucure orchestrator (\textbf{BOSH}).
+	\end{itemize}
+    \end{cvsubsection}
+    \begin{cvsubsection}{Engineering Manager}{Pivotal R\&D \normalfont{(San Francisco, CA)}}{Jan 2016 | May 2017}
+	\begin{itemize}%
+	    \item Coached 3 interns during the summer of 2016, enabling successful full-time hires after graduation.
+	    \item Helped design onboarding material for dozens of new hires.
+	\end{itemize}
+    \end{cvsubsection}
+    \begin{cvsubsection}{Senior Software Engineer}{Pivotal R\&D \normalfont{(San Francisco, CA)}}{Sep 2014 | Jan 2016}
+	\begin{itemize}%
+	    \item Took over as team lead on the \textbf{Diego} project and helped pivot the system design to reach scale and stability.
+	    \item Helped idealize a major API rework to enable new features on the Cloud Foundry platform.
+	\end{itemize}
+    \end{cvsubsection}
+    \begin{cvsubsection}{Software Engineer}{Pivotal Labs \normalfont{(San Francisco, CA)}}{Oct 2012 | Sep 2014}
+	\begin{itemize}%
+	    \item Led successful client engagement to completion and coached developers on agile processes and pairing.
+	\end{itemize}
+    \end{cvsubsection}
+    \begin{cvsubsection}{Software Engineer}{Go2nPlay \normalfont{(Curitiba, Brazil)}}{Jan 2012 | Sep 2012}
+	\begin{itemize}%
+	    \item Developed an integration between rich web UI and backend for a multi insurance quotes service.
+	    \item Developed a crowd-sourced map tool where citizens could report problems to the mayor's office.
+	\end{itemize}
+    \end{cvsubsection}
+    \begin{cvsubsection}{Software Engineer}{Shuffler.fm \normalfont{(Curitiba, Brazil)}}{Feb 2011 | Jan 2012}
+	\begin{itemize}%
+	    \item Applied previous experiences to improve team's shared understanding of Rails and Javscript modern tools.
+	\end{itemize}
+    \end{cvsubsection}
+    \begin{cvsubsection}{Dev / Researcher}{C3SL | UFPR \normalfont{(Curitiba, Brazil)}}{Jul 2008 | Jan 2011}
+	\begin{itemize}%
+	    \item Presented research work on intelligent tutoring systems at the EVINCI local conference.
+	\end{itemize}
+    \end{cvsubsection}
+    \begin{cvsubsection}{Founder / Developer}{Portal Tibia \normalfont{(Curitiba, Brazil)}}{Jan 2004 | Dec 2009}
+	\begin{itemize}%
+	    \item Developed early AJAX/XHR technologies. Around the time GMail made these technologies popular.
+	    \item Managed a community of thousands of daily active users.
+	\end{itemize}
+    \end{cvsubsection}
 \end{cvsection}
+
+\begin{cvsection}{Education}
+    \begin{cvsubsection}{Curitiba, Brazil}{Uni. Federal do Paraná}{Jan 2008 | Dec 2011}
+	\begin{itemize}
+	    \item BS in Computer Science.
+	\end{itemize}
+    \end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Projects}
+    \begin{cvsubsection}{}{}{}
+	\begin{itemize}
+	    \item \textbf{Diego (2015 | 2018) \emph{github.com/cloudfoundry/diego-release}:} A scheduler built for Cloud Foundry. Places long-running processes and single run tasks on Linux or Windows containers across hundreds of nodes.
+	    \item \textbf{BOSH DNS (2017 | 2019) \emph{github.com/cloudfoundry/bosh-dns-release}:} A general service discovery system built for BOSH\@. Tracks instances and services across deployments using the BOSH (bosh.io) tool.
+	    \item \textbf{Pairist (2018 | 2019) \emph{github.com/pivotal-cf/pairist}:} It's a tool that schedules pairing assignments across tracks of work to maximize context distribution on teams.
+	\end{itemize}
+    \end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Additional Experience}
+    \begin{cvsubsection}{}{}{}
+	\begin{itemize}
+	    \item Speaker: CF Summit NA 2015, CF Summit NA 2016, CF Summit EU 2016
+	\end{itemize}
+    \end{cvsubsection}
+\end{cvsection}
+
 \begin{cvsection}{Skills}
-	\begin{cvsubsection}{}{}{}
-		\begin{itemize}
-			\item Programming Languages:  Go
-		\end{itemize}
-	\end{cvsubsection}
+    \begin{cvsubsection}{}{}{}
+	\begin{itemize}
+	    \item Programming Languages:  Go, Ruby, Javascript,
+	    \item Tools / Systems:  Vim, tmux, git, Linux, Relational DBs (postgres, mysql), NoSQL (etcd, firebase)
+	    \item Soft:  Coaching, leading, facilitation
+	\end{itemize}
+    \end{cvsubsection}
 \end{cvsection}
 
-
-\
 \end{document}
